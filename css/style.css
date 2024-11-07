@@ -1,0 +1,409 @@
+
+@font-face {
+
+}
+
+.no_marg {
+    margin: 0;
+}
+
+.no_padd {
+    padding: 0;
+}
+
+.no_mp {
+    padding: 0;
+    margin: 0;
+}
+
+.inthebody {
+    margin: 10px 0;
+}
+.container, container-fluid {
+    font-family: 'Nirmala UI';
+    font-style: normal;
+}
+label {
+    font-weight: normal; 
+}
+
+form label {
+    margin: 5px 0;
+}
+
+.f_left {
+    float: left;
+}
+
+.login_card {
+    height: auto;
+    margin-top: 8%;
+}
+
+.form_card {
+    border: 1px solid rgba(50,50,150,1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.page_title {
+    font-family: 'Segoe UI';
+    background: rgba(50,50,150,1);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 7px;
+    font-weight: 500;
+    font-variant:small-caps;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.space_seperate {
+    height: 10px;
+    width: 100%;
+}
+
+.line_seperate {
+    width: 100%;
+    border-bottom : 1px solid rgba(50,50,150,1);
+    margin: 20px 0;
+}
+
+.connect {
+    margin: 10px 0 0 0;
+    width: 100%;
+    border-radius: 0;
+    color: rgba(50,50,150,1);
+    background: rgba(230,230,230,1);
+    border: none;
+    font-size: 15px;
+    transition: .3s all;
+}
+.connect:hover {
+   
+    color: rgba(230,230,230,1);
+    background: rgba(50,50,150,1);
+    border: none;
+    font-size: 16px;
+    transition: .5s all;
+}
+
+#thebody > #bodyTitle > h3,
+.modal-header {
+    font-family : 'Segoe UI';
+    font-variant:small-caps;
+    letter-spacing: 2px;
+}
+.bodyTitle {
+    height: 30px;
+    background-color: #022D65;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.bodyTitle > h3 {
+    margin: 0;
+    padding: 0;
+    padding-top: 4px;
+    font-size: 17px;
+    background-color: #022D65;
+    text-align: center;
+    color: white;
+}
+
+.push_body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.label_sexe {
+    border: 1px solid rgba(200,200,200,1);
+    padding: 5px 10px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.btn_clair {
+    background-color: transparent !important;
+    color: #022D65;
+    border: 1px solid rgb(230,230,230);
+    transition: .2s all;
+}
+
+.btn_clair:hover {
+    border-color: #022D65 !important;
+    background-color: #9db3d0 !important;
+    transition: .2s all;
+    color: #022D65;
+}
+
+.nav-tabs li {
+    background-color: #2273dc;
+    transition: .3s all;
+}
+
+.nav-tabs li:hover,
+.nav-tabs li:hover a {
+    background-color: #0649a0;
+    border: none;
+    transition: .3s all;
+}
+
+.nav-tabs li:hover a {
+    border: 1px solid transparent;
+}
+
+.nav-tabs li a {
+    color: #cee7fd;
+    border-radius: 0;
+    margin-right: 0;
+    padding : 3px 15px;
+}
+
+.nav-tabs li.active a,
+.nav-tabs li:focus a  {
+    color: white !important;
+    background-color: #022D65 !important;
+    border-color: #022D65 !important;
+    border-top: 2px solid rgb(180,180,180) !important;
+    margin-top: -1px !important;
+}
+
+.tab-pane > div {
+    background-color: transparent;
+}
+
+._radio {
+    width: 20px;
+    top: -6px;
+    left: 15px;
+}
+
+.detail_label {
+    font-weight: bold;
+}
+
+.form_alert {
+    margin-top : 20px;
+}
+
+._header {
+    position: fixed;
+    width: 100%;
+    border-radius: 0;
+    z-index: 10;
+    border-bottom : 1px solid rgba(200,200,200,1); 
+    box-shadow: 0px 5px 20px -12px rgba(0,0,0,1);
+}
+
+#thebody {
+    margin-top: 80px;
+}
+
+#modal_detail, #modal_bon_sortie {
+    /*top: 10px;*/
+    width: auto;
+}
+
+#modal_delete, #modal_confirm, #modal_annule {
+    top: 20%;
+}
+
+#modal_delete .modal-header,
+#modal_annule .modal-header {
+    background-color : rgb(180,0,0);
+}
+
+#modal_confirm .modal-header {
+    background-color : rgb(0,150,210);
+}
+._code {
+    text-transform: uppercase;
+}
+
+.quiet_layout {
+    padding: 10px;
+    margin: 1%;
+}
+
+.basket_seperator {
+    border-left: 1px solid rgb(200,200,200);
+    border-right: 1px solid rgb(200,200,200);
+    text-align: center;
+    padding: 40px 1px;
+    width: 50px;
+    /*margin-right: 50px;*/
+    margin-left: 30%;
+    margin-top: -30px;
+    margin-bottom: -20px;
+    transform : rotate(-90deg);
+}
+
+.basket_seperator span {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #022D65;
+    opacity: .7;
+}
+
+.home_space {
+    height: auto;
+    background-color: transparent;
+}
+
+.home_left_card {
+    margin-top: 15%;
+    height: 80%;
+    background-color: transparent;
+	opacity: 1;
+	transform: translate(0,20px) scale(1);
+}
+
+.home_left_card div {
+    margin-left: 20%;
+    width: 60%;
+    height: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.home_left_card div img{
+    border: solid 1px #bbb7cf;
+    padding: 10px;
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+}
+
+.home_footer {
+    height: 15%;
+    text-align:center;
+    background-color: black;
+    color: rgba(150,150,150,1);
+}
+
+.reveal_left_card {
+	opacity: 1 !important;
+	transform: translate(0,0) scale(1) !important;
+	transition: all .5s ease-out .0s;
+}
+
+.home_right_card {
+    margin-top: 40px;
+    height: 80%;
+    background-color: transparent;
+}
+
+.home_right_card img{
+    height: 100%;
+    float: right;
+}
+
+.login_space {
+	margin-top: 14%;
+	border-radius: 5px;
+	overflow: hidden;
+	opacity: 0;
+	transform: translate(0,20px) scale(.7);
+}
+
+@media (min-width: 992px) {
+  .basket_seperator {
+    transform : rotate(0deg);
+    margin-right: 50px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .list_space .div_form {
+      margin-left: 10px !important;
+  }
+
+  .wide_space .div_form {
+      margin-left: 0 !important;
+  }
+}
+
+.form_space {
+    padding : 0;
+}
+
+.div_form {
+      margin: 0;
+  }
+
+.list_space {
+    padding : 0;
+    margin : 0;
+}
+
+#warn {
+    display:none;
+}
+
+#badge_rupture {
+    color : orange;
+    border : 1px solid orange;
+    border-radius : 2px;
+    padding: 5px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    transition: .3s all;
+}
+
+#badge_rupture:hover {
+    color : white;
+    background-color : orange;
+    transition: .3s all;
+}
+
+#badge_rupture label {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+
+.popover.right {
+    width: 220px;
+}
+.popover.right > .arrow:after {
+    border-right-color: orange !important;
+}
+
+.popover-title {
+    background-color : orange;
+    color: white;
+}
+
+.popover {
+    padding : 0;
+}
+
+.thead_det {
+    background-color: #2273dc;
+    color: white;
+}
+
+.table .btn-group > .btn {
+    padding: 2px 8px !important;
+}
+
+.btn_save {
+    display: none;
+}
+
+.prest_card {
+    margin-top: 15px;
+    padding: 0;
+    border: 1px solid #00008b;
+    border-radius: 18px;
+    /*background-color: #edeaff;*/
+}
+
+    .prest_card > div:not(:first-child) {
+        border-top: 1px solid #00008b;
+    }

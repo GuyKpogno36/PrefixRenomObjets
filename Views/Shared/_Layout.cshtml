@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Préfixation/Renommage des objets</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+</head>
+<body>
+    <div class="container-fluid" style="font-family: 'Segoe UI';">
+        <div class="navbar navbar-default _header" role="navigation">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <div class="pull-left" style="margin-top: 1.12%;">
+                    @*<a href="#" class="dropdown-toggle" id="btn_logOut">
+                            <span class="glyphicon glyphicon-off" style="color: red; font-size: 20px;"></span>
+                        </a>*@
+                    <a href="/" class="dropdown-toggle" id="">
+                        <span class="glyphicon glyphicon-home" style="color: blue; font-size: 18px;" title="Accueil"> </span>
+                    </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="menu-item">@Html.ActionLink("Préfixation", "Index", "PrefixRenom")</li>
+                </ul>
+            </div>
+        </div>
+
+        @{
+            <div id="thebody" class="container-viewport container">
+                <div id="bodyTitle">
+                    <h3>@ViewBag.Topic</h3>
+                </div>
+                <div class="row inthebody">
+                    <div class="row-fluid">
+                        <div class="container">
+                            @RenderBody()
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        }
+        <footer style="text-align:center; margin-top:15px;">
+            <p>&copy; @DateTime.Now.Year - CERGI SA</p>
+        </footer>
+    </div>
+
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)*@
+    @Scripts.Render("~/js/js")
+    @RenderSection("scripts", required: false)
+
+    <script>
+        $(function () {
+            // Initialisation des grids
+            $("#dataTables-example").DataTable({
+                "paging": true,
+                "scrollY": "255px",
+                "scrollCollapse": true
+            });
+
+            // Mise en forme combo
+            $('selectpicker').selectpicker();
+        });
+
+        // Actualiser grid lors du redimensionnement
+        (function ($, sr) {
+
+            var debounce = function (func, threshold, execAsap) {
+                var timeout;
+
+                return function debounced() {
+                    var obj = this, args = arguments;
+                    function delayed() {
+                        if (!execAsap)
+                            func.apply(obj, args);
+                        timeout = null;
+                    }
+
+                    if (timeout)
+                        clearTimeout(timeout);
+                    else if (execAsap)
+                        func.apply(obj, args);
+
+                    timeout = setTimeout(delayed, threshold || 100);
+                };
+            };
+
+            // smartresize
+            jQuery.fn[sr] = function (fn) { return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+
+        })(jQuery, 'smartresize');
+
+        $(window).smartresize(function () {
+            $("#dataTables-example").DataTable({
+                "destroy": true,
+                "scrollY": "255px",
+                "scrollCollapse": true
+            });
+        });
+
+        // Vérifier la date
+        var rep_verfif_date = 0;
+        verifDate = function (champ, min, max) {
+            var dateNow = new Date(),
+                strSaisie = champ,
+                dateSaisie;
+            rep_verfif_date = 0;
+            strSaisie = strSaisie.replace(/-/g, "");
+            dateSaisie = new Date(strSaisie.substr(0, 4), strSaisie.substr(4, 2) - 1, strSaisie.substr(6, 2));
+
+            if (dateSaisie <= max && dateSaisie >= min) {
+                rep_verfif_date = 1;
+            }
+            else {
+                rep_verfif_date = -1;
+            }
+        }
+    </script>
+</body>
+</html>

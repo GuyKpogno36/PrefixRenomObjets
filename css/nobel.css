@@ -1,0 +1,129 @@
+﻿#leftTitle {
+    height: 30px;
+    background-color: #022D65;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#leftTitle > h3 {
+    margin: 0;
+    padding: 0;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 1%;
+    font-size: 15px;
+    background-color: #022D65;
+    text-align: left !important;
+    font-weight: bolder;
+    color: white;
+}
+
+.div_circle {
+    border: 1px solid #022d65;
+    background-color: #022d65;
+    color: white;
+    font-weight: bold;
+    border-color: #022D65; 
+    border-radius: 6px !important; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.push_fulltable {
+    margin-bottom: 1%;
+    margin-top: 1.5%;
+}
+
+.panel-cergi {
+    border-color: #022D65;
+}
+
+.panel-cergi>.panel-heading {
+    color: #FFFFFF;
+    background-color: #022D65;
+    border-color: #022D65;
+}
+
+.panel-cergi>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #022D65;
+}
+
+.panel-cergi>.panel-heading .badge {
+    color: #022D65;
+    background-color: #FFFFFF;
+}
+
+.panel-cergi>.panel-footer+.panel-collapse>.panel-body {
+    border-bottom-color: #022D65;
+}
+
+.push_right {
+    margin-left: -0.8%;
+    margin-bottom: 2%;
+}
+
+.facenote {
+    width: 45%;
+}
+
+.lineWidth {
+    width: 150%;
+    margin-left: -18%;
+}
+
+.table-heigth2 {
+    background-color: #948A54;
+    text-align: center;
+}
+
+.colorF {
+    background-color: #31869B;
+}
+
+.colorQ {
+    background-color: #B1A0C7;
+}
+
+.colorR {
+    background-color: #E26B0A;
+}
+
+.tireImg {
+    width: 30%;
+    height: 15%;
+}
+
+.trace_border {
+    border-right: 1px solid #022D65;
+}
+
+.border-rend {
+    text-align: center;
+    margin-top: 0.1%;
+}
+
+.border-get {
+    border-right: 1px solid #022D65;
+    margin-top: 0.1%;
+}
+
+.top_desc {
+    margin-top: 3%;
+    margin-bottom: 23%;
+}
+
+.push_note {
+    margin-bottom: 5%;
+}
+
+.Ddlsize {
+    font-size: 10px;
+}
+
+.navbar-cergi {
+    background-color: #BFBFBF;
+    border-color: #BFBFBF;
+    border-radius: inherit;
+}

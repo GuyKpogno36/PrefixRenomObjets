@@ -1,0 +1,116 @@
+﻿body {
+    font-family: Arial !important;
+    font-size : 13px;
+}
+
+.logoSpace img {
+    margin-top: 20px;
+    height: 100px;
+}
+
+h1.printTitle {
+    font-family: Tahoma !important;
+    font-size: 20px !important;
+    text-align: center;
+    width : 100%;
+    background-color : #efefef !important;
+    font-weight : 700;
+    margin: 20px 0 10px ;
+    margin-right: 50px;
+    padding: 5px 10px;
+    border: 5px solid #868686 !important;
+}
+
+div.prest_card {
+    margin: 15px;
+    padding: 0;
+    color: red;
+}
+
+body .prest_card .row {
+    border: 1px solid black !important;
+}
+
+body .prest_card {
+    font-size: 8px !important;
+    float:left;
+    width: 20px;
+}
+
+
+.table {
+  margin-top: 30px;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid #101010 !important;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+
+.table thead th {
+  padding : 4px 10px 0 !important;
+  margin-bottom : 0;
+  vertical-align: middle;
+  border-bottom: 2px solid #101010 !important ;
+  background-color : #efefef !important;
+  text-align: center !important;
+  font-size: 14px !important;
+}
+
+.table tbody td {
+  font-size : 14px;
+  padding: 3px 10px;
+  color: black !important;
+}
+
+
+.row_maj >td:not(:first-child),
+.row_maj2 >td:not(:first-child),
+.row_mid >td:not(:first-child) {
+  text-align: right;
+}
+
+.table tbody tr.row_maj {
+    background-color : #b8cdee !important;
+    font-weight: 700 !important;
+} 
+
+.table tbody tr.row_mid td {
+  font-size : 12px;
+} 
+
+.table-bordered {
+  border: 1px solid #101010 !important;
+  border-collapse: collapse;
+  width: 100% !important;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #101010 !important;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+h3.field_title label {
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    padding: 2px 30px;
+    font-size: 14px !important;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.prest_card2 {
+    margin-bottom: 20px;
+}
+
+
